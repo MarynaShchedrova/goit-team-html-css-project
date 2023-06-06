@@ -1,0 +1,53 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal-close-btn" data-modal-close>
+            <svg class="modal-close-icon" width="10.76" height="10.76">
+                <use href="./img/icons.svg#close"></use>
+            </svg>
+        </button>
+
+
+        <p class="modal-title">Order Form</p>
+
+        <form class="order-form">
+
+            <label for="input-name" class="form-label">Name</label>
+
+            <input type="text" name="name" class="modal-input" placeholder="Your name" required minlength="3"
+                maxlength="25" id="input-name">
+            <span class="name-error">
+                The name must be between 3 and 25 characters
+            </span>
+
+
+            <label for="input-tel" class="form-label">Phone</label>
+
+            <input type="tel" name="phone" class="modal-input" placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                title="Enter letters after prefix: 0__ ___ __ __" required pattern="\d\d\d\d\d\d\d\d\d\d" minlength="10"
+                maxlength="10" id="input-tel">
+            <span class="phone-error">
+                This phone must be in the format 099 000 00 00
+            </span>
+
+
+            <label for="input-email" class="form-label">Email</label>
+
+            <input type="email" name="email" class="modal-input last" placeholder="example@gmail.com" required
+                minlength="6" maxlength="25" id="input-email">
+            <span class="email-error">
+                Not a valid email address (example@email.com)
+            </span>
+
+            <button type="submit" class="submit-button">Send</button>
+
+            <div class="message">
+                <svg class="message-svg" width="165" height="54">
+                    <use href="./img/icons.svg#icon-message"></use>
+                </svg>
+                <p class="message-text">All fields are required</p>
+            </div>
+
+
+        </form>
+    </div>
+</div>

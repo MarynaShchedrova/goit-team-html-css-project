@@ -1,0 +1,269 @@
+.hero-section {
+  padding: 60px 0 50px;
+}
+
+.hero-title {
+  width: 502.42px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+
+.hero-desc {
+  font-weight: 400;
+  width: 514px;
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.hero-container {
+  display: flex;
+  width: 100%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
+.outer-circle {
+  /* position: relative; */
+  width: 528px;
+  height: 528px;
+}
+
+.slider-container {
+  position: relative;
+}
+
+.left-arrow,
+.right-arrow {
+  fill: var(--text-color);
+  transition: fill var(--transition-duration-and-fun);
+}
+
+.left-slider {
+  position: absolute;
+  border-radius: 8px;
+  border: none;
+  top: 210px;
+  left: -30px;
+}
+
+.right-slider {
+  position: absolute;
+  right: -30px;
+  top: 210px;
+  border-radius: 8px;
+  border: none;
+}
+
+.slider-btn {
+  background: white;
+  width: 40px;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  transition: background-color var(--transition-duration-and-fun);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 50;
+}
+
+.left-arrow:is(:hover, :focus),
+.right-arrow:is(:hover, :focus) {
+  fill: var(--dark-color);
+}
+.hero-buttons {
+  display: none;
+}
+
+.hero-btn {
+  width: 98px;
+  height: 32px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: calc(19.5 / 13);
+  background-color: var(--button-color);
+  border-radius: 30px;
+  border: none;
+  padding: 6px 18px;
+}
+
+.hero-btn:is(:hover, :focus) {
+  background-color: var(--main-color);
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .slider-container {
+    display: none;
+  }
+
+  .hero-container {
+    width: 100%;
+  }
+  .hero-title {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .hero-desc {
+    width: 100%;
+
+    line-height: 1.4;
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero-container {
+    width: 320px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+    width: 283px;
+  }
+
+  .slider-container {
+    display: none;
+  }
+  .hero-desc {
+    width: 266px;
+
+    line-height: 1.4;
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-bottom: 0;
+  }
+  .slider-container {
+    display: flex;
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    right: 32px;
+    top: 89px;
+    margin: 0;
+    border-radius: 50%;
+    border: 14px solid var(--main-color);
+  }
+  .hero-container {
+    width: 734px;
+    position: relative;
+  }
+
+  .outer-circle {
+    width: 320px;
+    height: 320px;
+  }
+  .hero-title {
+    width: 537px;
+    font-size: 42px;
+  }
+
+  .hero-desc {
+    width: 336px;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .slider-btn {
+    width: 34px;
+    height: 28px;
+
+    z-index: 50;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    width: 11px;
+    height: 20px;
+  }
+  .hero-buttons {
+    position: absolute;
+    right: 45px;
+    top: 23px;
+    width: 293px;
+    display: block;
+  }
+  .left-slider {
+    right: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    padding-top: 159px;
+    padding-bottom: 0;
+    position: relative;
+    width: 1278px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-container {
+    position: static;
+    width: 1278px;
+  }
+
+  .slider-container {
+    display: flex;
+    width: 580px;
+    height: 580px;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    border-radius: 50%;
+    border: 26px solid var(--main-color);
+  }
+
+  .hero-title {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .hero-desc {
+    width: 511px;
+    margin-bottom: 40px;
+  }
+
+  .outer-circle {
+    width: 528px;
+    height: 528px;
+  }
+
+  .slider-btn {
+    width: 48px;
+    height: 40px;
+    transform: translateY(-10%);
+  }
+  .left-arrow,
+  .right-arrow {
+    width: 16px;
+    height: 29px;
+  }
+
+  .left-slider {
+    transform: translateX(-10px);
+  }
+
+  .right-slider {
+    transform: translateX(10px);
+  }
+  .hero-buttons {
+    position: absolute;
+    right: 37px;
+    top: 72px;
+    width: 535px;
+  }
+}
